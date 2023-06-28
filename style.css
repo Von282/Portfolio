@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#head {
+    display: block;
+    background: linear-gradient(to bottom right, #F86F03, #525FE1);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    text-align: center;
+}
+
+section {
+    background-color: #FFF6F4;
+}
+
+h1 {  
+    font-family: 'Tinos', serif;
+}
+
+hr {   /*hr CSS*/
+    width: 300px;
+    margin: auto;
+
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to bottom left,  #525FE1,#F86F03);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+
+#head li {  /*Navbar CSS*/
+    display: inline;
+    padding: 50px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to bottom left,  #525FE1,#F86F03);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+
+
+.name {   /*Hero CSS*/
+    font-size: 6rem;
+    padding: 100px 0 50px 0;
+}
+
+.description {
+    padding: 40px 0 40px 0;
+    font-size: 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+
+
+#about .container {   /*About section CSS*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+    font-size: 3rem;
+    color: #F86F03;
+}
+
+.profile-img {
+    border: 5px solid #9AAEB3;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-text p{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 20vh;
+    margin: 2rem auto;
+}
+
+
+
+.container-projects {  /*Projects section CSS*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-projects .title {
+    margin-top: 6rem;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.project-1, .project-2, .project-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-1-img, .project-2-img, .project-3-img {
+    display: block;
+    border: 3px solid #9AAEB3;
+    border-radius: 10px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resume-button {
+   
+    font: bold 0.8rem 'Nunito';
+    background: linear-gradient(to top left, #525FE1, #F86F03);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 15px;
+    color: #FFF6F4;
+    height: 40px;
+    width: 75px;
+}
+
+
+
+#contact {     /*Contact section CSS*/
+    background-image: linear-gradient(to top left, #525FE1, #F86F03);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    padding-bottom: 3rem;
+}
+
+.footer-title h2 {
+    font-size: 2rem;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+}
+
+
+
+@media(max-width: 781px) {
+    .top-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .project-1, .project-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .project-1-img, .project-2-img, .project-3-img {
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+}
+
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
